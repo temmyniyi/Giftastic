@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphtastic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+
+</head>
+<body>
+    <!--Jumbotron for the Header Row-->
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <div class="jumbotron jumbotron-fluid">          
+        <div class="container">
+            <h1 class="display-4; text-center">Giphy Generator</h1>
+            <p class="lead; text-center">Game of Thrones Character References</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="row" id="buttons">
+        <!--The buttons go here-->
+    </div>
+        
+    </div>
+
+    <!--The form for searching for the Gifs from giphy.com-->
+    
+    <div class="row" id="form-section">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+        <form id="search">
+            <label form="searchTerm">Find more GIFs</label>
+            <input type="text" id="searchText"><br />
+            <input class ="add" type="submit" id="addButton" value="Add a new GIF!">
+        </form>
+        </div>
+        </div>
+    </div><br />
+    <!--Section for the GIFs obtained from giphy.com-->
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+    <button type="button" class="btn btn-primary" id="loadMore">Fetch more game of thrones GIFs based on the selected character</button>
+    <br>
+    <div class= "row" id="results"></div>
+    </div>
+    </div>
+    <script src="assets/javascript/logic.js"></script>
+</body>
+</html>
